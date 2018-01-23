@@ -1,0 +1,27 @@
+{
+  "name": "face-recognition-api",
+  "version": "1.0.0",
+  "description": "Face recognition app build in React with a Node server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisdev53548/face-recognition-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wisdev53548/face-recognition-api/issues"
+  },
+  "homepage": "https://github.com/wisdev53548/face-recognition-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
