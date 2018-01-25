@@ -41,16 +41,10 @@ app.get('/', (req, res) => {
 })
 
 app.post('/signin', (req, res) => {
-	bcrypt.compare("apples", "$2a$10$7oSxhZ2G0HTE0bH1cXk5meG58Fi0t/xwx.AcpiM.yb.J4sfVe9l/uy", function(err, res) {
-	  console.log('first guess', res)
-	});
-	bcrypt.compare("veggies", "$2a$10$7oSxhZ2G0HTE0bH1cXk5meG58Fi0t/xwx.AcpiM.yb.J4sfVe9l/uy", function(err, res) {
-	  console.log('second guess', res)
-	});
 	if (req.body.email === database.users[0].email && req.body.password === database.users[0].password) {
 		res.json('success')
 	} else {
-		res.status(400).json('error loggin in')
+		res.status(400).json('error logging in')
 	}
 })
 
